@@ -1,0 +1,21 @@
+{
+    "env": {
+      "node": true,
+      "es2021": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended", // TypeScript 사용 시
+      "plugin:prettier/recommended"           // Prettier 플러그인 활성화
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error", // Prettier 설정 위반 시 오류 발생
+      "no-console": "off",          // Node.js에서는 console 사용 허용
+      "no-unused-vars": "warn"
+    }
+  }
